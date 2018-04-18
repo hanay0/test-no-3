@@ -1,0 +1,308 @@
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Roboto-Regular.ttf');
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+.clear{
+    clear: both
+}
+
+body{
+    background-image: url(../images/shelf-bg.jpg);
+}
+
+
+
+.container{
+    width: 1170px;
+    background-color: #FFF;
+    margin: auto;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+.hovering{
+    background-color: aqua;
+    opacity: .5%
+}
+
+.header{
+    width: 100%;
+    background-image: url(../images/wind%20turbine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    border-bottom: 9px solid #076599
+}
+
+.header h1{
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    text-shadow: 0px 3px 2px rgba(62,62,62,1);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header p{
+    color: #FFF;
+    margin-left: 60px;
+    letter-spacing: .2em;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    text-shadow: 0px 3px 2px rgba(62,62,62,1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*start navbar*/
+
+.container .header .navbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);  /*this instead of using opacity*/
+    position: absolute;
+    bottom: 0
+}
+
+
+.container .header .navbar ul{
+    list-style: none;
+    float: left;
+    padding-top: 3%;
+    margin-left: 80px;
+    width: 100%
+}
+
+.container .header .navbar ul li{
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-right: 130px;
+    text-transform: capitalize
+}
+
+
+
+.container .header .navbar ul li a{
+    text-decoration: none;
+    color: #FFF;
+    transition: all .2s ease-in-out
+}
+
+
+.container .header .navbar ul li a:hover{
+    color: #9ac9f7
+}
+
+
+/*start content*/
+
+.container .content{
+    width: 100%;
+    float: left;
+    background-color: #FFF;
+    font-family: 'Roboto',sans-serif;
+        
+}
+
+
+.container .content h2{
+    color: #6C6C6C;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    margin-left: 60px;
+}
+
+.container .content p{
+    font-size: 18px;
+    color: #000;
+    width: 80%;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    line-height: 1.7em
+}
+
+/*start photos section*/
+
+.container .content .photos{
+    width: 100%;
+    float: left;
+}
+
+.container .content .photos figure{
+    margin-bottom: 30px;
+    width: 20%;
+    display: inline-block;
+    margin-left: 3.7%;
+    background: #fff
+}
+
+.container .content .photos figure:hover{
+    color: #007bff;
+    
+}
+
+.container .content .photos figure figcaption{
+    padding-left: 75px;
+    margin-top: 10px;
+    background: none !important
+}
+
+/* this is an effect with greyscale */
+
+/*
+.container .content .photos figure img{
+    width: 260px;
+    height: 340px;
+    -webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(60%) blur(1px);
+}
+
+.container .content .photos figure img:hover{
+    -webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+*/
+
+.container .content .photos figure img{
+    width: 100%;
+    height: 340px;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    background: #1abc9c;
+}
+
+
+.container .content .photos figure img:hover{
+    opacity: .5;
+    
+}
+
+
+
+/*start pages numbers*/
+
+.container .pagesNumbers{
+    width: 100%;
+    float: left;
+    margin-bottom: 60px;
+    background: #FFF
+}
+
+.container .pagesNumbers ul{
+    list-style: none;
+   text-align: center
+}
+
+.container .pagesNumbers ul li{
+    display: inline-block;
+    background-color: #DDD;
+    color: #1d1f41;
+    padding: 10px 17px;
+    margin: 3px;
+    transition: all .2s ease-in-out
+}
+
+.container .pagesNumbers ul li:hover{
+    background-color: #076599;
+    color: #FFF
+}
+
+.container .pagesNumbers ul li:first-of-type{
+    background-color: #076599;
+    color: #FFF
+}
+
+
+/*start help box*/
+
+.container .helpBox{
+    width: 90%;
+    height:300px;
+    float: inherit;
+    margin: auto;
+    background-color: #076599;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+.container .helpBox span{
+    color: #FFF;
+    padding-left: 20%;
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.container .helpBox p{
+    color: #FFF;
+    max-width: 60%;
+    padding-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.6em
+}
+
+
+.container .helpBox button{
+    margin-left: 210px;
+    padding: 12px 25px;
+    background: none;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-size: 18px;
+    transition: all .2s ease-in-out
+}
+
+.container .helpBox button:hover{
+    background: #FFF;
+    color: #076599
+}
+
+
+
+/*start footer*/
+
+footer{
+    width: 100%;
+    background-color: #333333;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
