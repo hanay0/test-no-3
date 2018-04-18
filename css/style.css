@@ -23,6 +23,8 @@ body{
 
 
 
+
+
 .container{
     width: 1170px;
     background-color: #FFF;
@@ -36,17 +38,18 @@ body{
     opacity: .5%
 }
 
-.header{
+header{
     width: 100%;
     background-image: url(../images/wind%20turbine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    float: left;
     height: 500px;
     position: relative;
     border-bottom: 9px solid #076599
 }
 
-.header h1{
+header h1{
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -58,7 +61,7 @@ body{
 
 }
 
-.header p{
+header p{
     color: #FFF;
     margin-left: 60px;
     letter-spacing: .2em;
@@ -70,40 +73,44 @@ body{
 
 /*start navbar*/
 
-.container .header .navbar{
+.container header nav{
     width: 100%;
-    height: 100px;
     background-color: rgba(0,0,0,0.5);  /*this instead of using opacity*/
     position: absolute;
-    bottom: 0
+    bottom: 0;
+    float: left;
+    text-align: center
 }
 
 
-.container .header .navbar ul{
+
+.container header nav ul{
     list-style: none;
-    float: left;
-    padding-top: 3%;
-    margin-left: 80px;
     width: 100%
 }
 
-.container .header .navbar ul li{
+
+
+.container header nav ul li{
     display: inline-block;
-    font-size: 1.3rem;
-    margin-right: 130px;
+}
+
+
+
+
+.container header nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+    padding: 30px 70px 30px 70px;
+    float: left;
+    font-size: 1.3em;
     text-transform: capitalize
 }
 
 
 
-.container .header .navbar ul li a{
-    text-decoration: none;
-    color: #FFF;
-    transition: all .2s ease-in-out
-}
-
-
-.container .header .navbar ul li a:hover{
+.container header nav ul li a:hover{
     color: #9ac9f7
 }
 
@@ -114,26 +121,28 @@ body{
     width: 100%;
     float: left;
     background-color: #FFF;
-    font-family: 'Roboto',sans-serif;
         
 }
 
+.container .content .contain{
+    float: left;
+    width: 80%;
+    padding-left: 60px;
+}
 
-.container .content h2{
+
+.container .content .contain h2{
     color: #6C6C6C;
     margin-top: 80px;
     margin-bottom: 15px;
     letter-spacing: 2px;
-    margin-left: 60px;
 }
 
-.container .content p{
+.container .content .contain p{
     font-size: 18px;
     color: #000;
-    width: 80%;
+    width: 100%;
     letter-spacing: 1px;
-    font-family: 'Roboto',sans-serif;
-    margin-left: 60px;
     margin-bottom: 50px;
     line-height: 1.7em
 }
@@ -150,19 +159,37 @@ body{
     width: 20%;
     display: inline-block;
     margin-left: 3.7%;
-    background: #fff
 }
 
 .container .content .photos figure:hover{
     color: #007bff;
+
+}
+
+.container .content .photos figure img{
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 340px;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
+}
+
+.container .content .photos figure img:hover{
+    opacity: .5;
     
 }
 
 .container .content .photos figure figcaption{
-    padding-left: 75px;
-    margin-top: 10px;
-    background: none !important
+   text-align: center
 }
+
+
+
+
+
+
 
 /* this is an effect with greyscale */
 
@@ -182,20 +209,7 @@ body{
 }
 */
 
-.container .content .photos figure img{
-    width: 100%;
-    height: 340px;
-    opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    background: #1abc9c;
-}
 
-
-.container .content .photos figure img:hover{
-    opacity: .5;
-    
-}
 
 
 
@@ -237,26 +251,28 @@ body{
 
 .container .helpBox{
     width: 90%;
-    height:300px;
-    float: inherit;
-    margin: auto;
+    float: left;
+    margin-left: 55px;
     background-color: #076599;
-    padding-top: 80px;
     margin-bottom: 50px;
 }
 
-
-.container .helpBox span{
+.container .helpBox .helpQuote{
+    width: 70%;
+    float: left;
+    padding: 50px 0;
     color: #FFF;
     padding-left: 20%;
+
+}
+
+
+.container .helpBox .helpQuote span{
     margin-top: 10%;
     font-size: 30px;
 }
 
-.container .helpBox p{
-    color: #FFF;
-    max-width: 60%;
-    padding-left: 20%;
+.container .helpBox .helpQuote p{
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -264,17 +280,16 @@ body{
 }
 
 
-.container .helpBox button{
-    margin-left: 210px;
+.container .helpBox .helpQuote button{
     padding: 12px 25px;
     background: none;
-    border: 1px solid #FFF;
     color: #FFF;
+    border: 1px solid #FFF;
     font-size: 18px;
     transition: all .2s ease-in-out
 }
 
-.container .helpBox button:hover{
+.container .helpBox .helpQuote button:hover{
     background: #FFF;
     color: #076599
 }
@@ -286,13 +301,14 @@ body{
 footer{
     width: 100%;
     background-color: #333333;
-    height: 50px;
     color: #FFF;
     text-align: center;
-    padding-top: 10px;
 }
 
-
+footer p{
+    font-size: 1.3em;
+    padding: 20px 0
+}
 
 
 
